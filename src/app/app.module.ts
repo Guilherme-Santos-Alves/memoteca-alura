@@ -3,16 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CabecalhoComponent } from './components/cabecalho/cabecalho.component';
+import { RodapeModule } from './components/rodape/rodape.module';
+import { CabecalhoModule } from './components/cabecalho/cabecalho.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CabecalhoComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RodapeModule,
+    CabecalhoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
