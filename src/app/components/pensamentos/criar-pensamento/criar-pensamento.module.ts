@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CriarPensamentoComponent } from './criar-pensamento.component';
 import { FormsModule } from '@angular/forms';
+import { CriarPensamentoRoutingModule } from './criar-pensamento-routing.module';
 
 
 
@@ -11,7 +12,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    CriarPensamentoRoutingModule
   ],
   exports: [
     CriarPensamentoComponent

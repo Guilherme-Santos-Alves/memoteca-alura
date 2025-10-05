@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { RodapeModule } from './components/rodape/rodape.module';
 import { CabecalhoModule } from './components/cabecalho/cabecalho.module';
 import { CriarPensamentoModule } from './components/pensamentos/criar-pensamento/criar-pensamento.module';
+import { ListarPensamentoModule } from './components/pensamentos/listar-pensamento/listar-pensamento.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CriarPensamentoModule } from './components/pensamentos/criar-pensamento
     AppRoutingModule,
     RodapeModule,
     CabecalhoModule,
-    CriarPensamentoModule
+    CriarPensamentoModule,
+    ListarPensamentoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
