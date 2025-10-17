@@ -7,6 +7,7 @@ import { RodapeModule } from './components/rodape/rodape.module';
 import { CabecalhoModule } from './components/cabecalho/cabecalho.module';
 import { CriarPensamentoModule } from './components/pensamentos/criar-pensamento/criar-pensamento.module';
 import { ListarPensamentoModule } from './components/pensamentos/listar-pensamento/listar-pensamento.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ListarPensamentoModule } from './components/pensamentos/listar-pensamen
     RodapeModule,
     CabecalhoModule,
     CriarPensamentoModule,
-    ListarPensamentoModule
+    ListarPensamentoModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

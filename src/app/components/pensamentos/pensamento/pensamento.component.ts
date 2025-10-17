@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { IPensamento } from '../Ipensamento';
+import { PensamentoService } from '../services/pensamento.service';
 
 @Component({
   selector: 'app-pensamento',
@@ -7,13 +9,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PensamentoComponent implements OnInit {
 
-  @Input() pensamento = {
+  @Input() pensamento: IPensamento = {
+    id: 0,
     conteudo: '',
     autoria: '',
     modelo: ''
   }
 
-  constructor() { }
+  constructor(private pensamentoService: PensamentoService) { }
 
   ngOnInit(): void {
   }
@@ -23,6 +26,10 @@ export class PensamentoComponent implements OnInit {
       return 'pensamento-g';
     }
     return 'pensamento-p';
+  }
+
+  excluirPensamento(){
+    alert('quer excluir?');
   }
 
 }
