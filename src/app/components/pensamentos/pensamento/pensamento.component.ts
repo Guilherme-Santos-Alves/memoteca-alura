@@ -27,9 +27,4 @@ export class PensamentoComponent implements OnInit {
     }
     return 'pensamento-p';
   }
-
-  excluirPensamento(){
-    alert('quer excluir?');
-  }
-
 }

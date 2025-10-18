@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'criarPensamento',
     loadChildren: () => import('./components/pensamentos/criar-pensamento/criar-pensamento.module').then(m => m.CriarPensamentoModule)
+  }, 
+  {
+    path: 'pensamentos/excluirPensamento/:id', 
+    loadChildren: () => import('./components/pensamentos/excluir-pensamento/excluir-pensamento.module').then(m => m.ExcluirPensamentoModule)
   }
 ];
 
