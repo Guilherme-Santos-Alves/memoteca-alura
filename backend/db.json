@@ -1,12 +1,6 @@
 {
   "pensamentos": [
     {
-      "id": 1,
-      "conteudo": "teste1",
-      "autoria": "GUI",
-      "modelo": "modelo1"
-    },
-    {
       "id": 2,
       "conteudo": "teste2",
       "autoria": "GUI",

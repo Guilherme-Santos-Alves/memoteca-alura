@@ -18,7 +18,12 @@ const routes: Routes = [
   {
     path: 'pensamentos/excluirPensamento/:id', 
     loadChildren: () => import('./components/pensamentos/excluir-pensamento/excluir-pensamento.module').then(m => m.ExcluirPensamentoModule)
-  }
+  },
+  {
+    path: 'pensamentos/editarPensamento/:id', 
+    loadChildren: () => import('./components/pensamentos/editar-pensamento/editar-pensamento.module').then(m => m.EditarPensamentoModule)
+  },
+
 ];
 
 @NgModule({
